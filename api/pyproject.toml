@@ -1,0 +1,26 @@
+[project]
+name = "fraud-detection-k8s"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Edmar Bevilaqua",email = "edmar.bevi@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "joblib (>=1.5.0,<2.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "pydantic (>=2.11.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+httpx = "^0.28.1"
+
